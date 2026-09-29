@@ -1,0 +1,5 @@
+{"ts": 1790708491.846349, "run_id": "replay_20260929T140131_e6d06f", "event": "replay_start", "artifact_id": "3cfa2f25-945b-46ef-b7b9-a3eca9e293c5", "artifact_name": "lookup_member_savings_balance", "artifact_version": 1, "input_keys": ["member_id"]}
+{"ts": 1790708492.7607, "run_id": "replay_20260929T140131_e6d06f", "event": "session_bootstrap_ok"}
+{"ts": 1790708493.2943249, "run_id": "replay_20260929T140131_e6d06f", "event": "step_ok", "step_id": "step_1", "action": "type"}
+{"ts": 1790708493.844639, "run_id": "replay_20260929T140131_e6d06f", "event": "step_ok", "step_id": "step_2", "action": "click"}
+{"ts": 1790708493.9346461, "run_id": "replay_20260929T140131_e6d06f", "event": "known_outcome_matched", "outcome_id": "member_not_found", "step_id": "step_2", "screenshot": "evidence/screenshots/replay_20260929T140131_e6d06f_step_2_known_outcome_e5368899.png"}

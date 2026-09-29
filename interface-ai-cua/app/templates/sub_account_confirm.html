@@ -1,0 +1,25 @@
+<html>
+<head><title>CU-Console :: Sub-Account Confirmed</title></head>
+<body bgcolor="#e8e8e8">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr bgcolor="#003366">
+    <td><font color="white" size="4"><b>&nbsp;CU-Console - Member Servicing</b></font></td>
+  </tr>
+</table>
+<table width="500" cellpadding="10" cellspacing="0" border="1" align="center" bgcolor="white">
+  <tr><td>
+    <table cellpadding="4" cellspacing="0" border="0" width="100%">
+      <tr><td colspan="2"><b>Sub-Account Opened</b></td></tr>
+      <tr><td>Member:</td><td>{{ member.name }} ({{ member_id }})</td></tr>
+      <tr><td>New Account Number:</td><td>{{ account_number }}</td></tr>
+      <tr><td colspan="2">The sub-account has been created successfully.</td></tr>
+      <!-- Deliberately a plain link styled as a button, not a real <button>, to
+           exercise locator robustness against inconsistent legacy markup. -->
+      <tr><td colspan="2" align="right">
+        <a href="/search" style="border:1px solid #333;padding:4px 10px;background:#ddd;text-decoration:none;color:black;">Done</a>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>

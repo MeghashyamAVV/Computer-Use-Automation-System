@@ -1,0 +1,42 @@
+<html>
+<head><title>CU-Console :: Member Detail</title></head>
+<body bgcolor="#e8e8e8">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr bgcolor="#003366">
+    <td><font color="white" size="4"><b>&nbsp;CU-Console - Member Servicing</b></font></td>
+    <td align="right"><font color="white"><a href="/logout" style="color:white">Sign Out</a>&nbsp;</font></td>
+  </tr>
+</table>
+<table width="600" cellpadding="10" cellspacing="0" border="1" align="center" bgcolor="white">
+  <tr><td>
+    <table cellpadding="4" cellspacing="0" border="0" width="100%">
+      <tr><td colspan="2"><b>Member: {{ member.name }}</b></td></tr>
+      <tr><td>Member ID:</td><td>{{ member_id }}</td></tr>
+    </table>
+  </td></tr>
+</table>
+
+<table width="600" cellpadding="10" cellspacing="0" border="1" align="center" bgcolor="white">
+  <tr><td>
+    <table cellpadding="4" cellspacing="0" border="0" width="100%">
+      <tr><td><b>Account Balances</b></td></tr>
+    </table>
+    <iframe src="/member/{{ member_id }}/balance" title="Account balances" width="100%" height="140" frameborder="0"></iframe>
+  </td></tr>
+</table>
+
+<table width="600" cellpadding="10" cellspacing="0" border="1" align="center" bgcolor="white">
+  <tr><td>
+    <table cellpadding="4" cellspacing="0" border="0" width="100%">
+      <tr><td><b>Actions</b></td></tr>
+      <tr>
+        <td><a href="/member/{{ member_id }}/sub-account/new">Open Sub-Account</a></td>
+      </tr>
+      <tr>
+        <td><a href="/search">Back to Search</a></td>
+      </tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>

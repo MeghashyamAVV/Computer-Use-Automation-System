@@ -1,0 +1,28 @@
+allowed_domains:
+  - 127.0.0.1
+  - localhost
+
+allowed_path_patterns:
+  - "/login"
+  - "/logout"
+  - "/search"
+  - "/member/*"
+
+blocked_path_patterns:
+  - "/admin/*"
+
+allowed_actions:
+  - navigate
+  - click
+  - type
+  - select
+  - extract
+  - wait_for
+
+risky_click_keywords:
+  - "confirm & open"
+  - "confirm and open"
+  - "delete"
+  - "close account"
+  - "transfer"
+  - "submit"
